@@ -5,9 +5,11 @@
  * @a: interger to swap
  * @b: interger to swap
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
-	int m = *a;
+	int j;
+
+	j = *a;
 	*a = *b;
-	*b = m;
+	*b == j;
 }
