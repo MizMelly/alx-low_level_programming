@@ -10,7 +10,6 @@
  */
 void check_elf(unsigned char *e_ident)
 {
-   
 	int index;
 
 	for (index = 0; index < 4; index++)
@@ -34,7 +33,7 @@ void check_elf(unsigned char *e_ident)
  */
 void print_magic(unsigned char *e_ident)
 {
-    int index;
+	int index;
 
 	printf(" Magic: ");
 
@@ -55,7 +54,7 @@ void print_magic(unsigned char *e_ident)
  */
 void print_class(unsigned char *e_ident)
 {
-    printf(" Class: ");
+	printf(" Class: ");
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -79,7 +78,7 @@ void print_class(unsigned char *e_ident)
  */
 void print_data(unsigned char *e_ident)
 {
-    printf(" Data: ");
+	printf(" Data: ");
 
 	switch (e_ident[EI_DATA])
 	{
@@ -103,8 +102,8 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-     printf(" Version: %d",
-			  e_ident[EI_VERSION]);
+	printf(" Version: %d",
+			e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -116,5 +115,4 @@ void print_version(unsigned char *e_ident)
 		break;
 	}
 }
-
-/* Implementations of other functions... */
+/* Implementations of other functions...*/

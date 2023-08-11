@@ -124,7 +124,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  */
 void close_elf(int elf)
 {
-if (close(elf) == -1)
+	if (close(elf) == -1)
 	{
 		dprintf(STDERR_FILENO,
 			"Error: Can't close fd %d\n", elf);
