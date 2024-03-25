@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (*b == '1')
 		{
-			co_Num << 1;
+			co_Num = co_Num << 1;
 			co_Num |= 1;
 		}
 		else
