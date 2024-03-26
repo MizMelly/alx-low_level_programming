@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * add - Adds two integers
@@ -43,7 +43,7 @@ int sub(int a, int b)
  *
  * Return: Result of division
  */
-int my_div(int a, int b)
+int ddiv(int a, int b)
 {
 	if (b == 0)
 		return (0);
